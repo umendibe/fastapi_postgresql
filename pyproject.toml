@@ -1,0 +1,23 @@
+[project]
+name = "fastapi-postgresql"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "umendibe", email = "ikumendibe25@lhusurbil.eus" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.143.1",
+    "psycopg[binary]>=3.3.6",
+]
+
+[project.scripts]
+fastapi-postgresql = "fastapi_postgresql:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = false
